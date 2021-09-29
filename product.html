@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+            crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/Style.css">
+    <title>Product List</title>
+</head>
+<body>
+    <div class="product-content">
+        <div id="proFormInsert">
+            <input type="number" id="indexItem" hidden>
+            <input type="text" placeholder="Nhập tên sản phẩm" id="proName">
+            <input type="number" placeholder="Nhập giá" id="proPrice">
+            <input type="text" placeholder="Nhập hãng" id="proBrand">
+            <button type="submit" onclick="insertProduct()" id="insertPro"><i class="fas fa-plus"></i> Insert</button>
+            <button type="submit" hidden onclick="updateProduct()" id="updatePro"><i class="fas fa-pen-alt"></i> Update</button>
+        </div>
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Pro_Name</th>
+                <th>Price</th>
+                <th>Brand</th>
+                <th>Option</th>
+            </tr>
+            <tbody id="product-list">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/product.js"></script>
+</body>
+</html>
